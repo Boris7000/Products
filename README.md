@@ -3,7 +3,7 @@
 **Products** — это приложение, созданное для прохождения тестового задания на стажировку в компанию ВКонтакте. 
 
 ## Screenshots
-![readme_cover](https://github.com/Boris7000/Products/blob/master/assets/homePage.png")
+![readme_cover](https://github.com/Boris7000/Products/blob/master/assets/homePage.png)
 
 В приложении реализованы следующие функции:
 * Отображение списка товаров по запросу "https://dummyjson.com/products".
