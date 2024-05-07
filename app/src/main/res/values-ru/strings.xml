@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Товары</string>
+
+    <string name="error">Ошибка</string>
+    <string name="tryAgain">Попробовать еще раз?</string>
+
+    <string name="searchInProducts">Поиск товаров</string>
+    <string name="description">Описание</string>
+    <string name="inStock">%d в наличии</string>
+    <string name="outOfStock">Нет в наличии</string>
+    <string name="details">Описание</string>
+    <string name="search">Поиск</string>
+    <string name="back">Назад</string>
+    <string name="rating">Рейтинг</string>
+    <string name="category">Категория</string>
+</resources>

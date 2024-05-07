@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">Products</string>
+
+    <string name="error">Error</string>
+    <string name="tryAgain">Try again?</string>
+
+    <string name="searchInProducts">Search in products</string>
+    <string name="description">Description</string>
+    <string name="inStock">%d in stock</string>
+    <string name="outOfStock">Out of stock</string>
+    <string name="details">Details</string>
+    <string name="search">Search</string>
+    <string name="back">Back</string>
+    <string name="rating">Rating</string>
+    <string name="category">Category</string>
+</resources>
