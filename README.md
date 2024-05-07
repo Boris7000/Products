@@ -3,6 +3,8 @@
 **Products** — это приложение, созданное для прохождения тестового задания на стажировку в компанию ВКонтакте. 
 
 ## Screenshots
+![readme_cover](https://github.com/android/compose-samples/assets/10263978/a58ab950-71aa-48e0-8bc7-85443a1b4f6b)
+
 ![readme_cover](https://github.com/android/compose-samples/assets/10263978/a58ab950-71aa-48e0-8bc7-85443a1b4f6b](https://github.com/Boris7000/Products/blob/master/assets/homePage.png) 
 
 В приложении реализованы следующие функции:
