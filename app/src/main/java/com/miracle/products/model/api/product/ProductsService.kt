@@ -1,7 +1,7 @@
 package com.miracle.products.model.api.product
 
-import com.miracle.products.model.entity.product.Product
-import com.miracle.products.model.entity.product.Products
+import com.miracle.products.model.product.Product
+import com.miracle.products.model.product.Products
 import retrofit2.http.GET
 import retrofit2.http.Path
 import retrofit2.http.Query

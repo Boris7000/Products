@@ -28,8 +28,8 @@ import androidx.lifecycle.viewmodel.compose.viewModel
 import androidx.navigation.NavOptions
 import androidx.navigation.Navigator
 import com.miracle.products.R
-import com.miracle.products.model.viewModel.product.searchScreen.ProductsSearchScreenModelFactory
-import com.miracle.products.model.viewModel.product.searchScreen.ProductsSearchScreenViewModel
+import com.miracle.products.model.viewModel.searchScreen.ProductsSearchScreenModelFactory
+import com.miracle.products.model.viewModel.searchScreen.ProductsSearchScreenViewModel
 import com.miracle.products.ui.nav.ProductsSearchDestination
 
 object ProductsSearchScreenComponents {

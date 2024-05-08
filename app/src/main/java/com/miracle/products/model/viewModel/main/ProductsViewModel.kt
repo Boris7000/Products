@@ -1,4 +1,4 @@
-package com.miracle.products.model.viewModel.product.main
+package com.miracle.products.model.viewModel.main
 
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
@@ -6,9 +6,9 @@ import androidx.paging.Pager
 import androidx.paging.PagingConfig
 import androidx.paging.PagingData
 import androidx.paging.cachedIn
-import com.miracle.products.model.entity.product.Product
-import com.miracle.products.model.repo.product.ProductsApiRepository
-import com.miracle.products.model.paging.product.ProductsPagingSource
+import com.miracle.products.model.product.Product
+import com.miracle.products.model.repo.ProductsApiRepository
+import com.miracle.products.model.paging.ProductsPagingSource
 import kotlinx.coroutines.flow.Flow
 
 open class ProductsViewModel: ViewModel() {

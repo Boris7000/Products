@@ -1,4 +1,4 @@
-package com.miracle.products.model.viewModel.product.searchScreen
+package com.miracle.products.model.viewModel.searchScreen
 
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.ViewModelProvider

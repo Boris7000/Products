@@ -1,7 +1,7 @@
-package com.miracle.products.model.repo.product
+package com.miracle.products.model.repo
 
-import com.miracle.products.model.entity.product.Product
-import com.miracle.products.model.entity.product.Products
+import com.miracle.products.model.product.Product
+import com.miracle.products.model.product.Products
 import com.miracle.products.model.api.RetrofitInstance
 
 class ProductsApiRepository {

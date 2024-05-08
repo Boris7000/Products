@@ -41,9 +41,10 @@ import androidx.lifecycle.viewmodel.compose.viewModel
 import androidx.navigation.NavOptions
 import androidx.navigation.Navigator
 import com.miracle.products.R
-import com.miracle.products.model.entity.product.Product
-import com.miracle.products.model.viewModel.product.details.ProductDetailsModelFactory
-import com.miracle.products.model.viewModel.product.details.ProductDetailsViewModel
+import com.miracle.products.model.product.Product
+import com.miracle.products.model.viewModel.loader.LoadState
+import com.miracle.products.model.viewModel.details.ProductDetailsModelFactory
+import com.miracle.products.model.viewModel.details.ProductDetailsViewModel
 
 object ProductDetailsComponents {
 
@@ -71,9 +72,13 @@ object ProductDetailsComponents {
 
         val product by viewModel.product.observeAsState()
 
+        val loadState by viewModel.loadState.observeAsState()
+
         ProductDetails(
             modifier = modifier,
             product = product,
+            loadState = loadState,
+            onRefresh = viewModel::fetchProduct,
             navigateBack = navigateBack,
             showBackButton = showBackButton,
             onRoute = onRoute
@@ -84,6 +89,8 @@ object ProductDetailsComponents {
     public fun ProductDetails(
         modifier: Modifier = Modifier,
         product: Product?,
+        loadState: LoadState?,
+        onRefresh: () -> Unit = {},
         navigateBack: () -> Unit = {},
         showBackButton: Boolean = false,
         onRoute:(
@@ -109,11 +116,29 @@ object ProductDetailsComponents {
                     .padding(paddingValues)
                     .verticalScroll(rememberScrollState())
             ) {
-                product?.let {
-                    ProductContent(
-                        modifier = modifier.padding(12.dp),
-                        product = it
-                    )
+                when(loadState) {
+                    is LoadState.Error -> {
+                        val loadStateError: LoadState.Error = loadState
+                        Box(modifier = Modifier
+                            .fillMaxWidth()
+                            .padding(12.dp)){
+                            ErrorMessage(
+                                modifier = Modifier.align(Alignment.Center),
+                                message = loadStateError.error.message,
+                                onRertry = onRefresh
+                            )
+                        }
+
+                    }
+                    is LoadState.NotLoading -> {
+                        product?.let {
+                            ProductContent(
+                                modifier = modifier.padding(12.dp),
+                                product = it
+                            )
+                        }
+                    }
+                    else -> Unit
                 }
             }
         }

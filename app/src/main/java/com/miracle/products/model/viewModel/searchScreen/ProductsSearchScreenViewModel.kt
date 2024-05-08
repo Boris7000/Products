@@ -1,8 +1,8 @@
-package com.miracle.products.model.viewModel.product.searchScreen
+package com.miracle.products.model.viewModel.searchScreen
 
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
-import com.miracle.products.model.viewModel.product.main.ProductsViewModel
+import com.miracle.products.model.viewModel.main.ProductsViewModel
 
 class ProductsSearchScreenViewModel(query:String): ProductsViewModel() {
 

@@ -1,13 +1,13 @@
-package com.miracle.products.model.viewModel.product.search
+package com.miracle.products.model.viewModel.search
 
 import androidx.lifecycle.viewModelScope
 import androidx.paging.Pager
 import androidx.paging.PagingConfig
 import androidx.paging.PagingData
 import androidx.paging.cachedIn
-import com.miracle.products.model.entity.product.Product
-import com.miracle.products.model.paging.product.ProductsSearchPagingSource
-import com.miracle.products.model.viewModel.product.main.ProductsViewModel
+import com.miracle.products.model.product.Product
+import com.miracle.products.model.paging.ProductsSearchPagingSource
+import com.miracle.products.model.viewModel.main.ProductsViewModel
 import kotlinx.coroutines.flow.Flow
 
 class ProductsSearchViewModel(val query:String): ProductsViewModel() {

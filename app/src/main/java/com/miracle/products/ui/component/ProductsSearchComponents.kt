@@ -8,9 +8,9 @@ import androidx.navigation.NavOptions
 import androidx.navigation.Navigator
 import androidx.paging.compose.LazyPagingItems
 import androidx.paging.compose.collectAsLazyPagingItems
-import com.miracle.products.model.entity.product.Product
-import com.miracle.products.model.viewModel.product.search.ProductSearchModelFactory
-import com.miracle.products.model.viewModel.product.search.ProductsSearchViewModel
+import com.miracle.products.model.product.Product
+import com.miracle.products.model.viewModel.search.ProductSearchModelFactory
+import com.miracle.products.model.viewModel.search.ProductsSearchViewModel
 import com.miracle.products.ui.component.ProductsComponents.Products
 
 object ProductsSearchComponents {

@@ -1,4 +1,4 @@
-package com.miracle.products.model.viewModel.product.details
+package com.miracle.products.model.viewModel.details
 
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.ViewModelProvider

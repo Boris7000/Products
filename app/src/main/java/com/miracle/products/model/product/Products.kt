@@ -1,4 +1,4 @@
-package com.miracle.products.model.entity.product
+package com.miracle.products.model.product
 
 data class Products(
     val products:MutableList<Product>,

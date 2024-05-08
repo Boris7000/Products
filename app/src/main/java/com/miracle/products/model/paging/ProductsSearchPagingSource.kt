@@ -1,10 +1,10 @@
-package com.miracle.products.model.paging.product
+package com.miracle.products.model.paging
 
 import androidx.paging.PagingSource
 import androidx.paging.PagingState
-import com.miracle.products.model.entity.product.Product
-import com.miracle.products.model.entity.product.Products
-import com.miracle.products.model.repo.product.ProductsApiRepository
+import com.miracle.products.model.product.Product
+import com.miracle.products.model.product.Products
+import com.miracle.products.model.repo.ProductsApiRepository
 
 class ProductsSearchPagingSource(
     private val query: String,

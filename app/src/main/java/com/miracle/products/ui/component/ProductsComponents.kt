@@ -27,7 +27,6 @@ import androidx.compose.material3.Button
 import androidx.compose.material3.Card
 import androidx.compose.material3.CardDefaults
 import androidx.compose.material3.CircularProgressIndicator
-import androidx.compose.material3.ExperimentalMaterial3Api
 import androidx.compose.material3.Icon
 import androidx.compose.material3.IconButton
 import androidx.compose.material3.MaterialTheme
@@ -44,14 +43,12 @@ import androidx.compose.ui.text.TextStyle
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.text.style.TextDecoration
 import androidx.compose.ui.text.style.TextOverflow
-import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import androidx.lifecycle.ViewModelStoreOwner
 import androidx.lifecycle.viewmodel.compose.viewModel
 import androidx.navigation.NavOptions
 import androidx.navigation.Navigator
-import androidx.navigation.navOptions
 import androidx.paging.LoadState
 import androidx.paging.compose.LazyPagingItems
 import androidx.paging.compose.collectAsLazyPagingItems
@@ -59,11 +56,10 @@ import androidx.paging.compose.itemContentType
 import androidx.paging.compose.itemKey
 import com.miracle.products.R
 import com.miracle.products.model.ItemContentTypes
-import com.miracle.products.model.entity.product.Product
-import com.miracle.products.model.viewModel.product.main.ProductsViewModel
+import com.miracle.products.model.product.Product
+import com.miracle.products.model.viewModel.main.ProductsViewModel
 import com.miracle.products.ui.nav.ProductDetailsDestination
 import com.miracle.products.ui.nav.ProductsSearchScreenDestination
-import com.miracle.products.ui.theme.ProductsTheme
 
 object ProductsComponents {
 
@@ -147,7 +143,7 @@ object ProductsComponents {
                                 ErrorMessage(
                                     modifier = Modifier.align(Alignment.Center),
                                     message = loadStateError.error.message,
-                                    onRertry = {products.retry()}
+                                    onRertry = products::retry
                                 )
                             }
                         }
@@ -227,7 +223,7 @@ object ProductsComponents {
                             ErrorMessage(
                                 modifier = Modifier.align(Alignment.Center),
                                 message = loadStateError.error.message,
-                                onRertry = {products.retry()}
+                                onRertry = products::retry
                             )
                         }
                     }

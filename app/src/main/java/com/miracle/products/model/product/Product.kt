@@ -1,4 +1,4 @@
-package com.miracle.products.model.entity.product
+package com.miracle.products.model.product
 
 import androidx.compose.runtime.Immutable
 

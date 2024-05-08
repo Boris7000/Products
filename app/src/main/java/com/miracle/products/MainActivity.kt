@@ -19,11 +19,11 @@ import androidx.navigation.compose.NavHost
 import androidx.navigation.compose.composable
 import androidx.navigation.compose.rememberNavController
 import androidx.navigation.navArgument
-import com.miracle.products.model.viewModel.product.details.ProductDetailsModelFactory
-import com.miracle.products.model.viewModel.product.details.ProductDetailsViewModel
-import com.miracle.products.model.viewModel.product.search.ProductSearchModelFactory
-import com.miracle.products.model.viewModel.product.search.ProductsSearchViewModel
-import com.miracle.products.model.viewModel.product.main.ProductsViewModel
+import com.miracle.products.model.viewModel.details.ProductDetailsModelFactory
+import com.miracle.products.model.viewModel.details.ProductDetailsViewModel
+import com.miracle.products.model.viewModel.search.ProductSearchModelFactory
+import com.miracle.products.model.viewModel.search.ProductsSearchViewModel
+import com.miracle.products.model.viewModel.main.ProductsViewModel
 import com.miracle.products.ui.component.ProductDetailsComponents.ProductDetailsModelWrapper
 import com.miracle.products.ui.component.ProductsComponents.ProductsModelWrapper
 import com.miracle.products.ui.component.ProductsSearchComponents.ProductsSearchModelWrapper
